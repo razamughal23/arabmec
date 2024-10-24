@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title id="pageTitle">
+      Contact Us - Arabian Millionaire Entertainment Company
+    </title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/img/AMEC-Logo-Green-BG.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/img/AMEC-Logo-Green-BG.png"
+    />
+    <!--  <link rel="manifest" href="/assets/img/site.webmanifest" /> -->
+    <link
+      rel="mask-icon"
+      href="/assets/img/safari-pinned-tab.svg"
+      color="#162f68"
+    />
+    <link rel="shortcut icon" href="./assets/img/AMEC-Logo-Green-BG.png" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <!-- <meta name="msapplication-config" content="/assets/img/browserconfig.xml" /> -->
+    <meta name="theme-color" content="#ffffff" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body class="scrollable-element">
+    <header id="header" class="fixed-top">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+          <a href="./index.html">
+            <img
+              src="./assets/img/AMEC-Logo-Green-Horizontal.png"
+              alt="ArabMec Logo"
+              class="header-logo"
+            />
+          </a>
+          <div class="navbar-design">
+            <nav id="navbar" class="navbar">
+              <ul>
+                <li>
+                  <a
+                    id="link1"
+                    class="nav-link scrollto active"
+                    href="./index.html"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="nav-link scrollto"
+                    id="link2"
+                    href="./our-expertise.html"
+                    >Our Expertise</a
+                  >
+                </li>
+                <li>
+                  <a class="nav-link" id="link3" href="./contact.html"
+                    >Contact</a
+                  >
+                </li>
+                <li>
+                  <a>
+                    <div id="language-selection">
+                      <img
+                        src="./assets/img/lang_img.png"
+                        alt="Language Toggle"
+                        id="language-img"
+                        class="language-icon"
+                      />
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- Section -->
+      <section class="contact-us-section">
+        <div class="container">
+          <div class="row">
+            <div class="mb-4">
+              <h1 id="contactHeading">Connect with ArabMec</h1>
+            </div>
+            <div class="mb-4">
+              <div class="col-12 col-lg-6 contact-us-form-div">
+                <form class="d-flex" onsubmit="sendEmail(event)">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-12 col-lg-4 input-container">
+                        <label for="first-name" id="firstName"
+                          >First Name *</label
+                        >
+                        <input
+                          type="text"
+                          id="first-name"
+                          name="first-name"
+                          required
+                          autocomplete="off"
+                        />
+                      </div>
+                      <div class="col-12 col-lg-4 input-container">
+                        <label for="last-name" id="lastName">Last Name *</label>
+                        <input
+                          type="text"
+                          id="last-name"
+                          name="last-name"
+                          required
+                          autocomplete="off"
+                        />
+                      </div>
+                      <div class="col-12 col-lg-4 input-container">
+                        <label for="email" id="Email">Email *</label>
+                        <input
+                          type="email"
+                          id="email"
+                          name="email"
+                          required
+                          autocomplete="off"
+                        />
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-lg-6 input-container">
+                        <label for="phone" id="Phone">Phone *</label>
+                        <input
+                          type="tel"
+                          id="phone"
+                          name="phone"
+                          required
+                          autocomplete="off"
+                          class="phoneDir"
+                        />
+                      </div>
+                      <div class="col-12 col-lg-6 input-container">
+                        <label for="company" id="Company">Company *</label>
+                        <input
+                          type="text"
+                          id="company"
+                          name="company"
+                          autocomplete="off"
+                        />
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 input-container">
+                        <label for="leave-message" id="leavemessage"
+                          >Leave a Message</label
+                        >
+                        <textarea
+                          id="leave-message"
+                          name="leave-message"
+                          rows="5"
+                          required
+                          autocomplete="off"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <button
+                          type="submit"
+                          class="submit-btn"
+                          id="sendMessage"
+                        >
+                          Send Message
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section -->
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-8 flex-center" id="footerAddress">
+            RAYD4218, Building 4218, Al Thumamah Street, Secondary No. 6706, Al
+            Yasmeen District, Postal Code 13322, Riyadh, Kingdom of Saudi Arabia
+          </div>
+          <div class="col-12 col-lg-4 flex-center">
+            <a href="mailto:info@arabmec.com">info@arabmec.com</a>
+          </div>
+        </div>
+        <div class="col-12 title-color text-center mt-1" id="footerRights">
+          © 2024 All Rights Reserved by Arabian Millionaire Entertainment
+          Company
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      function sendEmail(event) {
+        event.preventDefault();
+        var firstName = document.getElementById("first-name").value;
+        var lastName = document.getElementById("last-name").value;
+        var email = document.getElementById("email").value;
+        var phone = document.getElementById("phone").value;
+        var company = document.getElementById("company").value;
+        var leaveMessage = document.getElementById("leave-message").value;
+        var subject = "New Message from " + firstName + " " + lastName;
+        var body =
+          "From: " +
+          firstName +
+          " " +
+          lastName +
+          "\n" +
+          "Email: " +
+          email +
+          "\n" +
+          "Phone: " +
+          phone +
+          "\n" +
+          "Company: " +
+          company +
+          "\n" +
+          "Leave a Message: " +
+          leaveMessage;
+
+        var mailtoLink =
+          "mailto:info@arabmec.com?subject=" +
+          encodeURIComponent(subject) +
+          "&body=" +
+          encodeURIComponent(body);
+        window.location.href = mailtoLink;
+      }
+    </script>
+    <script>
+      const content = {
+        en: {
+          dir: "ltr",
+          pageTitle: "Contact Us - Arabian Millionaire Entertainment Company",
+          link1: "Home",
+          link2: "Our Expertise",
+          link3: "Contact",
+          footerAddress:
+            "RAYD4218, Building 4218, Al Thumamah Street, Secondary No. 6706, Al Yasmeen District, Postal Code 13322, Riyadh, Kingdom of Saudi Arabia",
+          footerRights:
+            "© All Rights Reserved by Arabian Millionaire Entertainment Company",
+          contactHeading: "Connect with ArabMec",
+          firstName: "First Name *",
+          lastName: "Last Name *",
+          Email: "Email *",
+          Phone: "Phone *",
+          Company: "Company",
+          leavemessage: "Leave a Message",
+          sendMessage: "Send Message",
+        },
+        ar: {
+          dir: "rtl",
+          pageTitle: "الاتصال - شركة المليونير العربي للترفيه",
+          link1: "الصفحة الرئيسية",
+          link2: "خبرتنا",
+          link3: "الاتصال",
+          footerAddress:
+            "RAYD4218 شارع الثمامة، رقم ثانوي 6706، حي الياسمين، الرمز البريدي 13322، الرياض، المملكة العربية السعودية",
+          footerRights: "© جميع الحقوق محفوظة لشركة المليونير العربية للترفيه",
+          contactHeading: "تواصل مع ArabMec",
+          firstName: "الاسم الأول *",
+          lastName: "العائلة *",
+          Email: "البريد الإلكتروني *",
+          Phone: "الهاتف *",
+          Company: "الشركة",
+          leavemessage: "اترك رسالة",
+          sendMessage: "إرسال الرسالة",
+        },
+      };
+      function updateContent(lang) {
+        const elements = [
+          "link1",
+          "link2",
+          "link3",
+          "pageTitle",
+          "footerAddress",
+          "footerRights",
+          "contactHeading",
+          "firstName",
+          "lastName",
+          "Email",
+          "Phone",
+          "Company",
+          "leavemessage",
+          "sendMessage",
+        ];
+        document.body.setAttribute("dir", content[lang].dir);
+        elements.forEach((id) => {
+          const element = document.getElementById(id);
+          if (element) {
+            element.textContent = content[lang][id];
+          } else {
+            console.warn(`Element with ID '${id}' not found`);
+          }
+        });
+      }
+      const languageImg = document.getElementById("language-img");
+      if (languageImg) {
+        languageImg.addEventListener("click", function () {
+          const currentLanguage =
+            document.body.getAttribute("dir") === "ltr" ? "en" : "ar";
+          const newLanguage = currentLanguage === "en" ? "ar" : "en";
+          localStorage.setItem("selectedLanguage", newLanguage);
+          updateContent(newLanguage);
+        });
+      } else {
+        console.warn("Language image element not found");
+      }
+      const savedLanguage = localStorage.getItem("selectedLanguage") || "en";
+      updateContent(savedLanguage);
+    </script>
+  </body>
+</html>
